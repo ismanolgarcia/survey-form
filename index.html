@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Survey-Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="form-main">
+    <div class="header-title">
+      <h1 id="title">Sign Up</h1>
+      <p id="description"> It's quick and easy <strong> (Cursor personalizado)</strong</p> </div> 
+        <form action="" id="survey-form">
+          <div class="text-group">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" name="" id="name" placeholder="Enter your name" required />
+
+            <label for="tel">Phone number</label>
+            <input type="tel" name="tel" id="tel" placeholder="Enter your phone number" required />
+
+            <label for="email" id="email-label">Email</label>
+            <input type="email" name="" id="email" placeholder="Enter your email" required />
+
+            <label for="number" id="number-label">Age</label>
+            <input type="number" name="" id="number" placeholder="Age" min="15" max="85" />
+          </div>
+
+          <div class="dropdown">
+            <p>I selected the course you want to choose</p>
+            <select name="languages" id="dropdown">
+              <option disabled selected value>Select current role</option>
+              <option value="Html">Html</option>
+              <option value="Css">Css</option>
+              <option value="javascript">JavaScript</option>
+              <option value="php">PHP</option>
+              <option value="python">Python</option>
+              <option value="C#">C#</option>
+            </select>
+          </div>
+
+          <div class="radio-group">
+            <p>Do you want Personal tutoring?</p>
+            <label for="Yes"><input type="radio" name="radio-group" id="Yes" value="Yes" />Yes</label>
+            <label for="No"><input type="radio" name="radio-group" id="No" value="No" />No</label>
+            <label for="later"><input type="radio" name="radio-group" id="later" value="Later it can be" />Later it can
+              be</label>
+          </div>
+
+          <div class="chek-group">
+            <p>
+              What would you like to dedicate yourself to in the future (It may
+              vary in the education process)
+            </p>
+            <label for="Front-end"><input type="checkbox" name="future" id="Front-end"
+                value="Front-end" />Front-end</label>
+            <label for="Back-end"><input type="checkbox" name="future" id="Back-end" value="Back-end" />Back-end</label>
+            <label for="UIUX"><input type="checkbox" name="future" id="UIUX" value="UIUX" />UI UX</label>
+            <label for="Mobile"><input type="checkbox" name="future" id="Mobile" value="Mobile" />Mobile dev</label>
+          </div>
+
+          <div class="info-add">
+            <p>Additional information</p>
+            <textarea name="" id="" cols="15" rows="5" placeholder="Enter you comment here..."></textarea>
+          </div>
+
+          <div class="submit">
+            <button type="submit" id="submit">Submit</button>
+          </div>
+          </form>
+  </main>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
